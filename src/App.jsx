@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import ComA from "./ComA";
+import ComA from "./context/ComA";
 
 const FirstName = createContext();
 const LastName = createContext();
