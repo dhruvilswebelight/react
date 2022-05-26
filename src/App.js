@@ -21,24 +21,34 @@
 
 //combine context
 
-import React, { createContext } from "react";
-import ComA from "./context/ComA";
+// import React, { createContext } from "react";
+// import ComA from "./context/ComA";
 
-const user = {
-  FirstName: "Dhruvil",
-  LastName: "Suhagiya",
-};
-const fullName = createContext({ user });
+// const user = {
+//   FirstName: "Dhruvil",
+//   LastName: "Suhagiya",
+// };
+// const fullName = createContext({ user });
+
+// const App = () => {
+//   return (
+//     <>
+//       <fullName.Provider value={user}>
+//         <ComA />
+//       </fullName.Provider>
+//     </>
+//   );
+// };
+
+// export default App;
+// export { fullName };
+
+// lifecycle method
+
+import React from "react";
+import Component from "./lifecycleMethod";
 
 const App = () => {
-  return (
-    <>
-      <fullName.Provider value={user}>
-        <ComA />
-      </fullName.Provider>
-    </>
-  );
+  return <Component />;
 };
-
 export default App;
-export { fullName };
