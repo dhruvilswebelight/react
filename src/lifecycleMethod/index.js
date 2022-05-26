@@ -7,13 +7,14 @@ const Component = () => {
   return (
     <div className="App">
       <h1> Our App</h1>
-
       <button onClick={() => setShowCounter(!showCounter)}>
         {showCounter ? "Hide Counter" : "Show Counter"}
       </button>
       {/* <Counter/> */}
-      {showCounter && <Counter />}
+      {showCounter  &&  <Counter />}
     </div>
   );
 };
 export default Component;
+
+
